@@ -7,8 +7,24 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hola mundo!</h1>
+        <h1>Traductor de Cifrado César</h1><br>
+
+        <h4>El cifrado césar es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra a un número fijo de posiciones más adelante en el alfabeto.</h4>
+        <h4>Utiliza solo letras de la A a la Z. No utilices la letra Ñ, acentos, ni símbolos.</h4><br>
+    
+        <p>Escribe aquí tu mensaje</p>    
+        <p><textarea id="message" rows="5" cols="50"> </textarea></p><br>
+        <p>Indica el número de posiciones de desplazamiento</p>
+        <p><textarea id="spaces" rows="2" cols="5"> </textarea></p><br>
+    
+        <button id="cifrar">cifrar</button>
+        <button id="descifrar">descifrar</button>
+        
+    
+        <h2 id="result"></h2><br>
     </div>
+
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
