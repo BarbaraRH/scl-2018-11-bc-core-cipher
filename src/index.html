@@ -7,23 +7,37 @@
   </head>
   <body>
     <div id="root">
-        <h1>Traductor de Cifrado César</h1><br>
+        <h1>Cifrado César</h1>
+        <h2>🐰 Edición de Pascua 🐰</h2>
 
-        <h4>El cifrado césar es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra a un número fijo de posiciones más adelante en el alfabeto.</h4>
-        <h4>Utiliza solo letras de la A a la Z. No utilices la letra Ñ, acentos, ni símbolos.</h4><br>
-    
-        <p>Escribe aquí tu mensaje</p>    
-        <p><textarea id="message" rows="5" cols="50"> </textarea></p><br>
-        <p>Indica el número de posiciones de desplazamiento</p>
-        <p><textarea id="spaces" rows="2" cols="5"> </textarea></p><br>
-    
-        <button id="cifrar">cifrar</button>
-        <button id="descifrar">descifrar</button>
+        <div class="box1">
+            <h4>¿Quieres hacer la busqueda de huevitos de pascua de tus hijos más entrenida?</h4>
+
+            <h4>Te proponemos organizar una busqueda mediante pistas cifradas para que encuentren su preciado tesoro</h4>
+
+            <h4>El cifrado césar será tu aliado en esta busqueda. Éste es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra a un número fijo de posiciones más adelante en el alfabeto.</h4>
+            
+            <img src="ninoLupa.jpg" />
+
+        </div>
         
+        <div class="box2">
+            <p>Utiliza solo letras de la A a la Z. No utilices la letra Ñ, acentos, ni símbolos.</p>
     
-        <h2 id="result"></h2><br>
-    </div>
+            <p>Escribe aquí tu mensaje</p>    
+            <p><textarea id="message" rows="5" cols="50"> </textarea></p>
+            <p>Indica el número de posiciones de desplazamiento</p>
+            <p><textarea id="spaces" rows="2" cols="5"> </textarea></p>
+            
+            <button id="cifrar">cifrar</button>
+            <button id="descifrar">descifrar</button>
+            
+            <div id = resultBox>
+                <p id="result"></p> 
+            </div>       
+        </div>
 
+    </div>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>

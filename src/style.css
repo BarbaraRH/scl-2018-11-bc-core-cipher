@@ -1,1 +1,50 @@
-/* Acá va tu código */
+* {
+    box-sizing: border-box;
+    
+  }
+
+body {
+    background-image: url("pascua9.png");   
+    color: #2e5a1c;
+    font-family: Helvetica;
+    text-align: center;
+    margin-right: 60px;
+    margin-left: 60px; 
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-position: bottom; 
+    
+}
+
+.box1 {
+    width: 650px;
+    height: 450px;
+    float: left;
+    padding: 5px 20px;
+  }
+
+.box2 {
+    width: 400px;
+    height: 450px;
+    float: left;
+    padding: 5px 20px;
+    margin-left: 80px;
+  }
+
+
+#resultBox {
+    border: 1px solid gray;
+    width: 320px;
+    height: 70px;
+    margin: 25px auto;
+}
+
+
+
+
+
+
+
+
+
+
