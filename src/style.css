@@ -1,29 +1,43 @@
 * {
     box-sizing: border-box;    
-  }
+}
+
+html, body {
+    margin: 0;
+    padding: 0; /* margin y padding 0 aquí, hacen que el header llegue hasta los bordes de la pagina*/
+}  
 
 body {
-    background-image: url("pascua9.png");
-    background-repeat: repeat-x;
-    background-attachment: fixed;
-    background-position: bottom;
     color: #524c84;
     font-family: 'Roboto Black', sans-serif;
     text-align: center;
-    margin-right: 60px;
-    margin-left: 60px;
 } 
     
-/*
-.bigBox {
-    overflow-x: auto;
+main {
+    margin-left: 30px;
+    position: relative; /* porque header esta fixed */
+    top: 140px;         /* porque o sino lo tapa el header fixed*/
+    width: 1250px;      /* solo con poner el width ahora el bigBox hace scroll horizontal. yupiiiii!!!!*/
+    /* bottom: 100px; */
 }
-*/
 
 header{
     background-color: #92e6e6;
     padding-top: 1px;
     padding-bottom: 1px;
+    width: 100%;     /* como header esta fixed, sino no se vería a lo ancho */
+    position: fixed; /*no se mueve si se hace scroll */
+    z-index: 1;      /* si se hace scroll queda adelante */
+}
+
+footer {
+    background-image: url("pascua9.png");
+    background-repeat: repeat-x;
+    position: fixed;
+    width: 100%;
+    height: 130px; /* si no pongo la altura no se verá */
+    bottom: 0;     /* para que se vea al fondo, si no se tapa */
+    z-index: 1;    /* si se hace scroll queda adelante */
 }
 
 h1 {
@@ -53,23 +67,22 @@ h2 {
     color: #d65d7a;
     border: #524c84 solid; 
     text-align: center;
-
 }
 
 .box1 {
     width: 650px;
     height: 450px;
-    float: left;
+    float: left;       /* esto hace que las box 1 y 2 queden lado a lado, pero no entiendo bien como funciona */
     padding: 5px 20px;
-  }
+}
 
 .box2 {
     width: 400px;
     height: 450px;
-    float: left;
+    float: left;       /* esto hace que las box 1 y 2 queden lado a lado, pero no entiendo bien como funciona */
     padding: 5px 20px;
     margin-left: 80px;
-  }
+}
 
 #resultBox {
     width: 320px;
@@ -81,12 +94,13 @@ h2 {
     border: #524c84 solid; 
     text-align: left;
     padding-left: 3px;
-    overflow: scroll;
+    overflow: scroll;      /* para que el contenido no se salga de los margenes */
+    background: white;
 }
 
 button {
     border: #d65d7a solid; 
-    border-radius: 5px;
+    border-radius: 5px;                 /* para que boton tenga las esquinas redondas */
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: white;
