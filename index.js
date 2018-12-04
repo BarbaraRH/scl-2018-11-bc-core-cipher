@@ -4,7 +4,7 @@
 
 document.getElementById("cifrar").addEventListener("click", function(){  
     let offset = parseInt(document.getElementById("spaces").value);
-    let string = (document.getElementById("message").value).toUpperCase();  
+    let string = document.getElementById("message").value;  
     document.getElementById("result").innerHTML = cipher.encode(offset, string);
 })
 
