@@ -17,8 +17,9 @@ main {
     margin-left: 30px;
     position: relative; /* porque header esta fixed */
     top: 140px;         /* porque o sino lo tapa el header fixed*/
-    width: 1250px;      /* solo con poner el width ahora el bigBox hace scroll horizontal. yupiiiii!!!!*/
-    /* bottom: 100px; */
+    width: 1250px;      /* solo con poner el width ahora el main hace scroll horizontal. yupiiiii!!!!*/
+    height: 585px;      /* al poner esto, si se achica la ventana se puede ver la parte de abajo del main.
+    /*bottom: 100px;*/ 
 }
 
 header{
