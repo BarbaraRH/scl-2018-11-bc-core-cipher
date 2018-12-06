@@ -28,7 +28,7 @@ Esta aplicación intenta hacer la experiencia de “Buscar Huevitos de Pascua”
 ![Pantalla](Pantalla.png)
 ## Decisiones de diseño
 
-El diseño de la aplicación pretende 3 objetivos:
+El diseño de la aplicación persigue 3 objetivos:
 
 1)	Introducir al Usuario al cifrado césar.
 
@@ -48,15 +48,15 @@ La página se diseña de esta manera para presentar todo el contenido desde el i
 
 La temática de la página (la Pascua) se manifiesta en el “footer” con huevitos de colores y en la elección de los colores en el “header”, color de fuente, áreas de ingreso y salida de texto; y botones. Para ello se seleccionó una paleta de colores “a tono” con los huevitos del “footer” (https://colorhunt.co/palette/119215).
 
-## Resumen del proyecto
+## Qué hace el programa de cifrado y descifrado:
 
-•	Cifra y descifra Mayúsculas (a mayúsculas).
+•	Cifra y descifra mayúsculas (a mayúsculas).
 
 •	Cifra y descifra minúsculas (a minúsculas).
 
 •	Cifra y descifra números (a números).
 
-•	No se puede ingresar caracteres sobre 191 en ASCII, (Aparece alerta y no permite su ingreso).  Estos caracteres incluyen letras con acento y la Ñ.
+•	No se puede ingresar caracteres sobre 191 en ASCII (aparece alerta y no permite su ingreso).  Estos caracteres incluyen letras con acento y la Ñ.
 
 •	Si se ingresa caracteres bajo o igual a ASCII 192, que no sean máyusculas, minúsculas o números, los caracteres se mantienen después del cifrado/descifrado. Esto incluye espacios y puntuaciones. También símbolos como ¡ % & ( ) [ ]?:
 
