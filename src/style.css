@@ -81,16 +81,21 @@ h2 {
     width: 40%;
     text-align: left;
     overflow: scroll;
-    padding: 10px 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 40px;
 }
   
 .two {
-    width: 30%;
+    width: 27%;
     padding-top: 120px;
+    padding-right: 20px;
 }    
 
 .three {
-    width: 30%;
+    width: 33%;
+    padding-right: 30px;
 }
 
 .boxes:after {
