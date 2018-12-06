@@ -4,10 +4,10 @@ document.getElementById("cifrar").addEventListener("click", function(){
     let string = document.getElementById("message").value;  
     
     for (let i = 0; i < string.length; i++){
-        if (string.charCodeAt(i) > 126) {
-            alert ("No utilizar Ñ ni acentos.");  
-            return "";          
-        }
+        if (string.charCodeAt(i) > 191) {
+            alert("No utilizar Ñ ni acentos.");
+            return "";
+        }           
     }
     if (isNaN(offset) === true) {
         alert ("Este valor debe ser un número, no una letra o palabra."); 
@@ -22,7 +22,7 @@ document.getElementById("descifrar").addEventListener("click", function(){
     let string = document.getElementById("message").value; 
 
     for (let i = 0; i < string.length; i++){
-        if (string.charCodeAt(i) > 126) {
+        if (string.charCodeAt(i) > 191) {
             alert ("No utilizar Ñ ni acentos.");
             return "";
         }
@@ -34,7 +34,6 @@ document.getElementById("descifrar").addEventListener("click", function(){
     document.getElementById("result").innerHTML = cipher.decode(offset, string);
     }
 })
-
 
 
 
