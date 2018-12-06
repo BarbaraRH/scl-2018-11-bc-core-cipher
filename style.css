@@ -14,12 +14,11 @@ body {
 } 
     
 main {
-    margin-left: 30px;
     position: relative; /* porque header esta fixed */
-    top: 140px;         /* porque o sino lo tapa el header fixed*/
-    width: 1250px;      /* solo con poner el width ahora el main hace scroll horizontal. yupiiiii!!!!*/
-    height: 585px;      /* al poner esto, si se achica la ventana se puede ver la parte de abajo del main.
-    /*bottom: 100px;*/ 
+    top: 119px;         /* porque o sino lo tapa el header fixed*/
+    width: auto;      /* solo con poner el width ahora el main hace scroll horizontal. yupiiiii!!!!*/
+    height: 580px;      /* al poner esto, si se achica la ventana se puede ver la parte de abajo del main. */
+    /*bottom: 100px;*/
 }
 
 header{
@@ -57,9 +56,9 @@ h2 {
 #message {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    width: 320px;
+    width: 90%;
     height: 70px;
-    margin: 10px auto;
+    margin: 25px auto;
     color: #d65d7a;
     border: #524c84 solid; 
 }
@@ -72,23 +71,36 @@ h2 {
     text-align: center;
 }
 
-.box1 {
-    width: 650px;
-    height: 450px;
-    float: left;       /* esto hace que las box 1 y 2 queden lado a lado, pero no entiendo bien como funciona */
-    padding: 5px 20px;
+.box {
+    float: left; /* esto hace que las box queden lado a lado, pero no entiendo bien como funciona */
+    padding: 10px;
+    height: 470px;
 }
 
-.box2 {
-    width: 400px;
-    height: 450px;
-    float: left;       /* esto hace que las box 1 y 2 queden lado a lado, pero no entiendo bien como funciona */
-    padding: 5px 20px;
-    margin-left: 80px;
+.one {
+    width: 40%;
+    text-align: left;
+    overflow: scroll;
+    padding: 10px 30px;
+}
+  
+.two {
+    width: 30%;
+    padding-top: 120px;
+}    
+
+.three {
+    width: 30%;
+}
+
+.boxes:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 #resultBox {
-    width: 320px;
+    width: 90%;
     height: 70px;
     margin: 25px auto;
     font-family: 'Roboto', sans-serif;
