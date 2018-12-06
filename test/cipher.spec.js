@@ -35,8 +35,8 @@ describe('cipher', () => {
       assert.equal(cipher.encode(-12, "1234567890"), "9012345678");
     });
 
-    it('debería retornar "!@#%&/()=?[]+{}<>;,:.-" para "!@#%&/()=?[]+{}<>;,:.-" con offest 33', () => {
-      assert.equal(cipher.encode(33, "!@#%&/()=?[]+{}<>;,:.-"), "!@#%&/()=?[]+{}<>;,:.-");
+    it('debería retornar "!@#%&/()=?[]+{}<>;,:.-¿¡" para "!@#%&/()=?[]+{}<>;,:.-¿¡" con offest 33', () => {
+      assert.equal(cipher.encode(33, "!@#%&/()=?[]+{}<>;,:.-¿¡"), "!@#%&/()=?[]+{}<>;,:.-¿¡");
     });
 
   });
@@ -59,8 +59,8 @@ describe('cipher', () => {
       assert.equal(cipher.decode(12, "3456789012"), "1234567890");
     });
 
-    it('debería retornar "!@#%&/()=?[]+{}<>;,:.-" para "!@#%&/()=?[]+{}<>;,:.-" con offest 33', () => {
-      assert.equal(cipher.decode(33, "!@#%&/()=?[]+{}<>;,:.-"), "!@#%&/()=?[]+{}<>;,:.-");
+    it('debería retornar "!@#%&/()=?[]+{}<>;,:.-¿¡" para "!@#%&/()=?[]+{}<>;,:.-¿¡" con offest 33', () => {
+      assert.equal(cipher.decode(33, "!@#%&/()=?[]+{}<>;,:.-¿¡"), "!@#%&/()=?[]+{}<>;,:.-¿¡");
     });
 
   });

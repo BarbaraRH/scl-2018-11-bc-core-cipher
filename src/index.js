@@ -10,7 +10,7 @@ document.getElementById("cifrar").addEventListener("click", function(){
         }           
     }
     if (isNaN(offset) === true) {
-        alert ("Este valor debe ser un número, no una letra o palabra."); 
+        alert ("El valor de número de posiciones de desplazamiento debe ser un número"); 
         return "";
     } else {
         document.getElementById("result").innerHTML = cipher.encode(offset, string);
@@ -28,7 +28,7 @@ document.getElementById("descifrar").addEventListener("click", function(){
         }
     }
     if (isNaN(offset) === true) {
-        alert ("Este valor debe ser un número, no una letra o palabra."); 
+        alert ("El valor de número de posiciones de desplazamiento debe ser un número"); 
         return "";       
     } else {
     document.getElementById("result").innerHTML = cipher.decode(offset, string);
