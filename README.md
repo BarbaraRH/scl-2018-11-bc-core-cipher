@@ -15,7 +15,7 @@ Ejemplo de cómo utilizar el cifrado cesar para este fin:
 
 * En la aplicación web, cifra los mensajes.
 
-* Luego escríbelos o imprímelos. Indica en el mensaje el número de desplazamiento. 
+* Luego escríbe o impríme los mensajes cifrados. Indica en el mensaje el número de desplazamiento. 
 
 * Colócalos en los lugares definidos para la búsqueda. También ubica los huevitos.
 
