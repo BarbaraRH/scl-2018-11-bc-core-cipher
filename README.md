@@ -65,3 +65,10 @@ La temática de la página (la Pascua) se manifiesta en el “footer” con huev
 •	Si se ingresa un offset negativo para cifrar, el programa descifra.
 
 •	Si se ingresa un offset negativo para descifrar, el programa cifra.
+
+## Planificación
+
+https://trello.com/b/kvYc3x0l/cipher
+
+
+
