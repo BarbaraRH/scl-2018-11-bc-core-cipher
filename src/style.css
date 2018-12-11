@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;    
 }
@@ -15,7 +16,7 @@ body {
     
 main {
     position: relative; /* porque header esta fixed */
-    top: 119px;         /* porque o sino lo tapa el header fixed*/
+    top: 99px;         /* porque o sino lo tapa el header fixed*/
     width: auto;      /* solo con poner el width ahora el main hace scroll horizontal. yupiiiii!!!!*/
     height: 580px;      /* al poner esto, si se achica la ventana se puede ver la parte de abajo del main. */
     /*bottom: 100px;*/
@@ -23,8 +24,7 @@ main {
 
 header{
     background-color: #92e6e6;
-    padding-top: 15px;
-    padding-bottom: 1px;
+    padding-top: 5px;
     width: 100%;     /* como header esta fixed, sino no se vería a lo ancho */
     position: fixed; /*no se mueve si se hace scroll */
     z-index: 1;      /* si se hace scroll queda adelante */
@@ -35,22 +35,23 @@ footer {
     background-repeat: repeat-x;
     position: fixed;
     width: 100%;
-    height: 130px; /* si no pongo la altura no se verá */
+    height: 95px; /* si no pongo la altura no se verá */
     bottom: 0;     /* para que se vea al fondo, si no se tapa */
-    z-index: 1;    /* si se hace scroll queda adelante */
+    z-index: 1;    /* si se hace scroll queda adelante */    
 }
 
 h1 {
     font-family: 'Roboto Black', sans-serif;
     font-size: 28px;
     font-weight: 700;
-    line-height: .2em;
+    line-height: .5em;
     color: #d65d7a;
 }
 
 h2 {
     font-family: 'Righteous', cursive;
     color: #d65d7a;
+    line-height: .8em;
 }
 
 #message {
@@ -74,7 +75,7 @@ h2 {
 .box {
     float: left; /* esto hace que las box queden lado a lado, pero no entiendo bien como funciona */
     padding: 10px;
-    height: 470px;
+    height: 518px;
 }
 
 .one {
@@ -127,6 +128,10 @@ button {
     background: #d65d7a;
     margin: 0px 10px;
 }
+
+
+
+    
 
 
 

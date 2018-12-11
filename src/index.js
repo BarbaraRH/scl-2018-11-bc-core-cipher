@@ -1,4 +1,5 @@
 
+
 document.getElementById("cifrar").addEventListener("click", function(){  
     let offset = parseInt(document.getElementById("spaces").value);
     let string = document.getElementById("message").value;  
